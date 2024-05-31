@@ -1,0 +1,59 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Car;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Car carro;
+		
+		System.out.print("Informe o modelo do carro: ");
+		String modelo = sc.nextLine();
+		System.out.print("Informe a cor do carro: ");
+		String cor = sc.nextLine();
+		System.out.print("Informe a eficiência do carro: ");
+		double eficiencia = sc.nextDouble();
+		
+		carro = new Car(modelo, cor, eficiencia);
+		
+		while (true) {
+			carro.showMenu();
+			
+			System.out.print("Digite a sua opção: ");
+			int opcao = sc.nextInt();
+			
+			switch (opcao) {
+			case 1: {
+				carro.andar();
+				break;
+			}
+			
+			case 2: {
+				carro.reabastecer();
+				break;
+			}
+			
+			case 3: {
+				carro.verificarCombustivel();
+				break;
+			}
+			
+			case 4: {
+				System.out.println();
+				System.out.println("Viagem encerrada!");
+				System.out.println("Programa encerrado!");
+				System.exit(4);
+			}
+			
+			default: {
+				System.out.println("Você digitou uma opção invpalida!");
+			}
+			}
+		}
+
+	}
+
+}

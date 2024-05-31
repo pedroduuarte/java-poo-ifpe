@@ -1,0 +1,16 @@
+INDEX VERSION 1.134+C:\Java Exercises\Java POO Exercises IFPE\List 5\.metadata\.plugins\org.eclipse.jdt.core
+2141417716.index
+3863025397.index
+3200686223.index
+2960689782.index
+1355348387.index
+1855244170.index
+2015724374.index
+2135443279.index
+1865797976.index
+695327692.index
+2437293667.index
+3869909326.index
+144982114.index
+253932480.index
+667928885.index
